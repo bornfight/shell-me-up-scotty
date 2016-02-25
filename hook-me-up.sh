@@ -51,5 +51,8 @@ brew cask install google-chrome firefox
 #php7
 #phpstorm
 #add optional stuff that requres user input (with yes as default answer)
+#izgeneriraj key za github
+#izgeneriraj key za produkcijske servere
+#clone all the things
 
 echo "Calibration complete. Have a nice day."
