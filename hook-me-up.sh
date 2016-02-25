@@ -16,6 +16,8 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 
+#brew install npm #stavi da user moze izabrat zeli li ovo
+
 ################
 #Work work work#
 ################
@@ -45,6 +47,9 @@ brew install vim
 
 echo "You'll need a lot of browsers"
 brew cask install google-chrome firefox
+
+echo "Htop for monitoring your mac resources"
+brew install htop
 
 #ToDo
 #apache
