@@ -51,6 +51,9 @@ brew cask install google-chrome firefox
 echo "Htop for monitoring your mac resources"
 brew install htop
 
+echo "Setting some aliases for you. Check them out with 'less ~/.bash_aliases'"
+cp .bash_aliases ~/.bash_aliases
+
 #ToDo
 #apache
 #php7
