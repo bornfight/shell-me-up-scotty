@@ -1,7 +1,7 @@
 ## SERVERS
-alias truba='ssh apps@truba.interaktivni-studio.com -i ~/.ssh/kru'
-alias deghq='ssh apps@deghq.com -i ~/.ssh/kru'
-alias drombulja='ssh root@drombulja.interaktivni-studio.com -i ~/.ssh/drombulja'
+alias truba='ssh apps@truba.interaktivni-studio.com'
+alias deghq='ssh apps@deghq.com'
+alias drombulja='ssh root@drombulja.interaktivni-studio.com'
 
 ## SYSTEM STUFF
 alias phpini='sudo vim /usr/local/etc/php/7.0/php.ini'
