@@ -4,5 +4,5 @@ if choice "Are you a PHP developer?"; then
 fi;
 
 if choice "Are you a frontend developer?"; then
-  sh bundles/includes/frontned-dev.sh
+  sh bundles/includes/frontend-dev.sh
 fi;
