@@ -1,3 +1,3 @@
-echo "You'll gonna need npm and bower";
+echo "You'll gonna need npm, bower and gulp";
 brew install npm
-npm install -g
+npm install -g bower gulp-cli
