@@ -12,6 +12,9 @@ brew cask install iterm2
 
 echo "The only way to work in a team is by using version control"
 brew install git
+echo "[Git] Ignoring filemode changest"
+git config --global core.filemode false
+git config --add --global core.filemode false
 
 echo "Java 4-Ever"
 brew cask install java
