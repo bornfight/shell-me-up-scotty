@@ -8,6 +8,7 @@ echo "Press any key when your in"
 read foo
 
 echo "Clone all the things"
+#change working directory to work for cloning into respective folders
 cd ~/work
 git clone git@github.com:degordian/yapp-framework.git 
 git clone git@github.com:degordian/yapp.git 
@@ -15,3 +16,5 @@ git clone git@github.com:degordian/iframework.git
 git clone git@github.com:degordian/iapp.git 
 git clone git@github.com:degordian/dwp.git
 echo "Good news, the cloning has completed!"
+#revert to original directory
+cd -
