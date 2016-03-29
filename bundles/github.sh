@@ -8,9 +8,10 @@ echo "Press any key when your in"
 read foo
 
 echo "Clone all the things"
-git clone git@github.com:degordian/yapp-framework.git ~/work
-git clone git@github.com:degordian/yapp.git ~/work
-git clone git@github.com:degordian/iframework.git ~/work
-git clone git@github.com:degordian/iapp.git ~/work
-git clone git@github.com:degordian/dwp.git ~/work
+cd ~/work
+git clone git@github.com:degordian/yapp-framework.git 
+git clone git@github.com:degordian/yapp.git 
+git clone git@github.com:degordian/iframework.git 
+git clone git@github.com:degordian/iapp.git 
+git clone git@github.com:degordian/dwp.git
 echo "Good news, the cloning has completed!"
