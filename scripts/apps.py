@@ -18,6 +18,9 @@ system("brew cask install java")
 print "Mac text editor sucks big time, and there's no notepad++"
 system("brew cask install textwrangler")
 
+print "When were at ediots, you could use IDE for development, PHPStorm is a good choice"
+system("brew cask install phpstorm")
+
 print "You'll need a lot of browsers (meaning just two of them)"
 system("brew cask install google-chrome firefox")
 

@@ -12,5 +12,3 @@ print "Calibration complete. Have a nice day."
 
 # TODO:
 # apache (hosts + vhosts)
-# php7
-# phpstorm
