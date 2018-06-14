@@ -10,11 +10,12 @@ system("ssh-keygen -t rsa -b 4096 -C {0}".format(email))
 
 system("eval \"$(ssh-agent -s)\"")
 
-with open("~/.ssh/config", "a") as ssh_config:
+with open("~/.ssh/config", "w+") as ssh_config:
     ssh_config.write("Host *")
     ssh_config.write("  AddKeysToAgent yes")
     ssh_config.write("  UseKeychain yes")
     ssh_config.write("  IdentityFile ~/.ssh/id_rsa")
+    ssh_config.close()
 
 ssh_location = raw_input("Where did you save ssh key?\n")
 
