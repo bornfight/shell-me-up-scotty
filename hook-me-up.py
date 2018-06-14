@@ -10,5 +10,14 @@ system("python ./scripts/github.py")
 
 print "Calibration complete. Have a nice day."
 
+contributors = [
+    "@krukru",
+    "@Dvorsky",
+    "@renatoruk"
+]
+
+print "Special thanks to the contributors:"
+print ", ".join(contributors)
+
 # TODO:
 # apache (hosts + vhosts)
