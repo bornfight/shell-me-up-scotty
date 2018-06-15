@@ -8,7 +8,13 @@ A single point of entry that will pimp your workstation with everything you need
 Just run in with ` sudo python hook-me-up.py ` and you're done.
 
 
-contributing
+Documentation
+-------------
+
+All stuff being done is documentated. Check [documentation](docs/README.md).
+
+
+Contributing
 ------------
 If you want to contribute, start by checking issues on the project.
 After fixing something or adding a new feature, create PR and wait 
