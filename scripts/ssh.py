@@ -4,7 +4,11 @@ print "Generating your public/private key pair. You'll use this for github & ssh
 
 email = raw_input("First, what is your @degordian.com email? I won't use it for anything shady, I promise ;)\n")
 
-system("ssh-keygen -t rsa -b 4096 -C {0}".format(email))
+print("Okay, generating your key....")
+
+ssh_location = "~/.ssh/github_rsa"
+
+system("ssh-keygen -t rsa -b 4096 -f {0} -C {1}".format(ssh_location, email))
 
 # TODO: automail toniju izgenerirani public key
 
@@ -17,6 +21,9 @@ with open("~/.ssh/config", "w+") as ssh_config:
     ssh_config.write("  IdentityFile ~/.ssh/id_rsa")
     ssh_config.close()
 
-ssh_location = raw_input("Where did you save ssh key?\n")
 
 system("ssh-add -K {0}".format(ssh_location))
+
+system("chmod 600 {0}; chmod 600 {0}".format(ssh_location))
+
+print("Finished generating your key!")
