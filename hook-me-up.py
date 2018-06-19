@@ -13,7 +13,8 @@ print "Calibration complete. Have a nice day."
 contributors = [
     "@krukru",
     "@Dvorsky",
-    "@renatoruk"
+    "@renatoruk",
+    "@flackovic"
 ]
 
 print "Special thanks to the contributors:"
