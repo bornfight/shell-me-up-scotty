@@ -25,6 +25,10 @@ alias dwp='cd ~/work/dwp/'
 alias yfw='cd ~/work/yapp-framework/'
 alias yiicore='cd ~/work/yapp-framework/vendor/yiisoft/yii2/'
 
+## Git
+alias gs="git status"
+alias gc="git commit"
+
 ## REGULARS
 alias ll='ls -al'
 alias flushdns='sudo discoveryutil udnsflushcaches'
@@ -37,9 +41,28 @@ alias apacherestart='sudo httpd -e info -k restart'
 alias memcached-start='memcached -I2m -d start'
 alias mariastart='brew services start mysql'
 alias mariastop='brew services stop mysql'
+alias apache-logs='cd /usr/local/var/log/httpd'
+alias codecept='php ~/work/testing-toolkit/vendor/codeception/codeception/codecept'
 
 ## OPEN FILE WITH TEXTWRANGLER
 function textWranglerOpen() {
 	open -a TextWrangler $1
 }
 alias edit=textWranglerOpen
+
+## Misc
+goodMorningClosure() {
+	say "Good morning motherfucker!"
+	open -a "Google Chrome" https://mail.google.com/ https://github.com
+	open -a "Slack"
+	say "Updating repositories"
+	sh ~/work/pull_repos.sh
+	say "All repositories updated";
+	say "Updating composer"
+	composer self-update
+	say "Composer updated"
+	say 'Updating brew';
+	brew update
+	say "Brew updated"
+}
+alias dobrojutro=goodMorningClosure
