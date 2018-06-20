@@ -17,3 +17,5 @@ print "Creating ~/work folder"
 system("mkdir -p ~/work")
 print "Copying pull_repos shell script inside ~/work"
 system("cp files/pull_repos.sh ~/work/pull_repos.sh")
+print "Make it executable"
+system("chmod +x ~/work/pull_repos.sh")
