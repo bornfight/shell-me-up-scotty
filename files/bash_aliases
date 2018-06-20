@@ -26,8 +26,8 @@ alias yfw='cd ~/work/yapp-framework/'
 alias yiicore='cd ~/work/yapp-framework/vendor/yiisoft/yii2/'
 
 ## Git
-alias gs="git status"
-alias gc="git commit"
+alias gits="git status"
+alias gitc="git commit"
 
 ## REGULARS
 alias ll='ls -al'
