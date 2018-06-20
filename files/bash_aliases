@@ -52,17 +52,17 @@ alias edit=textWranglerOpen
 
 ## Misc
 goodMorningClosure() {
-	say "Good morning motherfucker!"
+	echo "Good morning!"
 	open -a "Google Chrome" https://mail.google.com/ https://github.com
 	open -a "Slack"
-	say "Updating repositories"
+	echo "Updating repositories"
 	sh ~/work/pull_repos.sh
-	say "All repositories updated";
-	say "Updating composer"
+	echo "All repositories updated";
+	echo "Updating composer"
 	composer self-update
-	say "Composer updated"
-	say 'Updating brew';
+	echo "Composer updated"
+	echo 'Updating brew';
 	brew update
-	say "Brew updated"
+	echo "Brew updated"
 }
 alias dobrojutro=goodMorningClosure
