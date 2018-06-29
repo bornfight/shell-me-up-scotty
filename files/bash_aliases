@@ -42,7 +42,6 @@ alias memcached-start='memcached -I2m -d start'
 alias mariastart='brew services start mysql'
 alias mariastop='brew services stop mysql'
 alias apache-logs='cd /usr/local/var/log/httpd'
-alias codecept='php ~/work/testing-toolkit/vendor/codeception/codeception/codecept'
 
 ## OPEN FILE WITH TEXTWRANGLER
 function textWranglerOpen() {

@@ -45,7 +45,6 @@ Aliases
 - **mariastart**='brew services start mysql'
 - **mariastop**='brew services stop mysql'
 - **apache-logs**='cd /usr/local/var/log/httpd'
-- **codecept**='php ~/work/testing-toolkit/vendor/codeception/codeception/codecept'
 
 ## Misc
 - **dobrojutro**=goodMorningClosure
