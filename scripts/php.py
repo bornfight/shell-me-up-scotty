@@ -1,4 +1,5 @@
 from os import system
+import generators
 
 print "Try being php developer without php"
 system("brew tap homebrew/php")
@@ -28,3 +29,11 @@ system("brew install htop")
 print "Getting your database stuff"
 system("brew install mariadb phpmyadmin")
 system("brew services start mariadb")
+
+print "To top it off, lets sort out your hosts files"
+
+generators.enable_vhosts()
+generators.generate_hosts()
+generators.generate_vhosts()
+
+system("sudo httpd -e info -k restart")

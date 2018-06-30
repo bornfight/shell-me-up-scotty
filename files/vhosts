@@ -1,0 +1,110 @@
+#####################
+#    LOCALHOST
+#####################
+<VirtualHost localhost:80>
+    ServerAdmin {USERNAME}@local
+    DocumentRoot /Users/{USERNAME}/work/
+    ServerName localhost
+    <Directory "/Users/{USERNAME}/work/">
+        AllowOverride All
+        Order Allow,Deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+#####################
+#    STATIC.LOC
+#####################
+<VirtualHost www.static.loc:80>
+    Header set Access-Control-Allow-Origin "*"
+    ServerAdmin {USERNAME}@local
+    DocumentRoot "/Users/{USERNAME}/work/static/"
+    ServerName www.static.loc
+    <Directory "/Users/{USERNAME}/work/static/">
+        AllowOverride All
+        Order Allow,Deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+#####################
+#    TEST.LOC
+#####################
+<VirtualHost www.test.loc:80>
+    ServerAdmin {USERNAME}@local
+    DocumentRoot "/Users/{USERNAME}/work/test/"
+    ServerName www.test.loc
+    <Directory "/Users/{USERNAME}/work/test/">
+        AllowOverride All
+        Order Allow,Deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+#####################
+#    DWP.LOC
+#####################
+<VirtualHost www.dwp.loc:80>
+    ServerAdmin {USERNAME}@local
+    DocumentRoot "/Users/{USERNAME}/work/dwp/"
+    ServerName www.dwp.loc
+    <Directory "/Users/{USERNAME}/work/dwp/">
+        AllowOverride All
+        Order Allow,Deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+#####################
+#    YAPP.LOC
+#####################
+<VirtualHost www.yapp.loc:80>
+    ServerAdmin {USERNAME}@local
+    DocumentRoot "/Users/{USERNAME}/work/yapp/"
+    ServerName www.yapp.loc
+    <Directory "/Users/{USERNAME}/work/yapp/">
+        AllowOverride All
+        Order Allow,Deny
+        Require all granted
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+
+#####################
+#    PMA.LOC
+#####################
+<VirtualHost www.pma.loc:80>
+    ServerAdmin {USERNAME}@local
+    DocumentRoot "/Users/{USERNAME}/work/pma/"
+    ServerName www.pma.loc
+    <Directory "/Users/{USERNAME}/work/pma/">
+        AllowOverride All
+        Order Allow,Deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+#####################
+#    DEVPLAYGROUND.LOC
+#####################
+<VirtualHost www.devplayground.loc:80>
+    ServerAdmin {USERNAME}@local
+    DocumentRoot "/Users/{USERNAME}/work/devplayground/"
+    ServerName www.apple-dep.loc
+    <Directory "/Users/{USERNAME}/work/devplayground/">
+        AllowOverride All
+        Order Allow,Deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
