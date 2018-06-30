@@ -15,6 +15,10 @@ Aliases
 - **b**='cd -'
 - **fp**='ps aux | grep '
 
+## Git
+- **gis**='git status'
+- **gic**='git commit'
+
 # mysql connect
 - **mysql**='/usr/local/bin/mysql -uroot -p'
 
@@ -40,4 +44,18 @@ Aliases
 - **memcached**-start='memcached -I2m -d start'
 - **mariastart**='brew services start mysql'
 - **mariastop**='brew services stop mysql'
+- **apache-logs**='cd /usr/local/var/log/httpd'
+
+## Misc
+- **dobrojutro**=goodMorningClosure
+
+## GoodMorningClosure
+
+- Opens Chrome with tabs:
+	- Google mail
+	- Github
+- Opens Slack app
+- Pulls all repositories from Work directory
+- Updates composer
+- Updates brew
 
