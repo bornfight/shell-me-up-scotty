@@ -8,6 +8,5 @@
 255.255.255.255	broadcasthost
 ::1             localhost
 127.0.0.1	www.yapp.loc
-127.0.0.1	www.pma.loc
 127.0.0.1	www.static.loc
 127.0.0.1	www.devplayground.loc

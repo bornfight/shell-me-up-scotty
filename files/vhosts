@@ -79,22 +79,6 @@
 
 
 #####################
-#    PMA.LOC
-#####################
-<VirtualHost www.pma.loc:80>
-    ServerAdmin {USERNAME}@local
-    DocumentRoot "/Users/{USERNAME}/work/pma/"
-    ServerName www.pma.loc
-    <Directory "/Users/{USERNAME}/work/pma/">
-        AllowOverride All
-        Order Allow,Deny
-        Allow from all
-        Require all granted
-    </Directory>
-</VirtualHost>
-
-
-#####################
 #    DEVPLAYGROUND.LOC
 #####################
 <VirtualHost www.devplayground.loc:80>
