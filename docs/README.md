@@ -13,3 +13,4 @@ Script                      | Description           |
 **[ssh](ssh.md)**           | SSH key               |
 **[GitHub](github.md)**     | GitHub integration    |
 **[Aliases](aliases.md)**   | All available aliases |
+**[Apache](apache.md)**     | Apache configuration  |
